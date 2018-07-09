@@ -1,6 +1,7 @@
 ------------------------------
 $<%= data['PricesByColumn']['UPGRADE'] %>
 <%= data['MarketingCarrier'] %><%= data['FlightNumber'] %> <%= data['DepartTimeFormat'] %> > <%= data['DestinationTimeFormat'] %>
-<%= data['OriginDescription'] %> > <%= data['DestinationDescription'] %><% _.forEach(data['Connections'], function(connect) { %>
+<%= data['OriginDescription'] %> > <%= data['DestinationDescription'] %> <%=
+data['EquipmentDisclosures']['EquipmentDescription'] %><% _.forEach(data['Connections'], function(connect) { %>
 <%= connect['MarketingCarrier'] %><%= connect['FlightNumber'] %> <%= connect['DepartTimeFormat'] %> > <%= connect['DestinationTimeFormat'] %>
-<%= connect['OriginDescription'] %> > <%= connect['DestinationDescription'] %><% }) %>
+<%= connect['OriginDescription'] %> > <%= connect['DestinationDescription'] %> <%= connect['EquipmentDisclosures']['EquipmentDescription'] %><% }) %>
