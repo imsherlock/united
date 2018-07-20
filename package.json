@@ -17,9 +17,10 @@
   ],
   "dependencies": {
     "lodash": "~3.10.1",
-    "puppeteer": "0.13.x",
+    "request": "2.65.x",
     "colors": "*"
   },
-  "devDependencies": {},
+  "devDependencies": {
+  },
   "license": "Apache-2.0"
 }
